@@ -1,12 +1,141 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Grid and Bear it - My Projects Grid</title>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Grid and Bear it - My projects grid</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Euphoria+Script&family=Quicksand:wght@300..700&family=Satisfy&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cambay:ital,wght@0,400;0,700;1,400;1,700&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Euphoria+Script&family=Nabla&family=Quicksand:wght@300..700&family=Satisfy&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <p>Hello, Laura Kam</p>
+    <!-- Navigation -->
+    <nav class="site-nav grid">
+      <h1>Web Portfolio</h1>
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="grid">
+      <div class="welcome-text">
+        <h2>
+          Hey, I'm <span class="name">Laura</span><br />
+          UI Designer<br />
+          & Frontend Developer
+        </h2>
+        <p class="welcome-paragraph">
+          I love learning things in a deep, meaningful way. Find me buying one
+          coffee and spending hours coding. Check out what I've been working
+          hard on lately.
+        </p>
+        <a href="#portfolio" class="button">Take a look ></a>
+      </div>
+      <div class="welcome-img">
+        <img
+          src="./assets/pink-profile-picture.png"
+          alt="Laura Kam profile picture"
+        />
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h3>Projects</h3>
+      <div class="projects grid">
+        <a href="#">
+          <img src="./assets/maifrigo-app.png" alt="Maifrigo app preview" class="image"/>
+          <h4><span>Maifrigo</span><br />Recipe Creation App</h4>
+        </a>
+        <a href="#">
+          <img
+            src="./assets/Header-app.png"
+            alt="Portfolio Header App preview"
+            class="projects__image"
+          />
+         
+          <h4><span>Flexin' My Skills</span><br />Portfolio Header App</h4>
+        </a>
+        <a href="#">
+          <img src="./assets/Gif-feels-app.png" alt="GIFeels app preview" />
+          <h4><span>GIFeels</span><br />Mood Journaling App</h4>
+        </a>
+      </div>
+    </section>
+<!-- Skills Section -->
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="grid">
+    <li>
+      <img src="./assets/CFG-Degree-LK.png" alt="Code First Girls certificate">
+      <h1>Software Development Mini Degree 2023 <br><span>Code First Girls</span></h1>
+    </li>
+    <li>
+      <img src="./assets/UI-Certificate-LK.png" alt="UI Design Institute certificate">
+      <h1>Professional Certificate in UI Design <br><span>UX Design Institute 2023</span></h1>
+    </li>
+  </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h3>Get in touch</h3>
+  <p class="leading">LOREM IPSUM</p>
+  <form action="#">
+    <input type="text" placeholder="Name" aria-label="Your name">
+    <input type="email" placeholder="Email" aria-label="Your email">
+    <textarea placeholder="Your message" aria-label="Your message"></textarea>
+    <button class="button" type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="grid">
+    <p class="copyright">© 2023 Laura Kam Portfolio</p>
+   
+    <ul class="social">
+      <li>
+        <a href="#" aria-label="Instagram">
+          <i class="fa-brands fa-square-instagram footer__icon"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook footer__image--facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="GitHub">
+          <i class="fa-brands fa-github footer__image--github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/24904f6e20.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
   </body>
 </html>

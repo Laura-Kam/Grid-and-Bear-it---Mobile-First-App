@@ -5,6 +5,8 @@
 :root{
     --primary: #D88C9A;
 
+    --call-to-action-colour:  #bb8244;
+
     --light-pink: #ebced3;
 
     --secondary:#f2d0a9cc;
@@ -86,6 +88,8 @@ transition: transform 0.1s ease, box-shadow 0.1s ease;
     /* timing in parent above with transition property */
    transform: translateY(3px);
 }
+
+
 li{
     list-style-type: none;
 }
@@ -198,6 +202,8 @@ font-weight: 700;
 .projects {
 
     position: relative;
+  
+
 }
 
 .projects a{
@@ -380,6 +386,71 @@ form button{
 
 @media screen and (min-width: 620px) {
     
+    .welcome-text{
+        grid-column: 1/5;
+    }
+
+    .welcome-img{
+        grid-column: 5/9;
+   
+        /* 200 perc of whatever is containing the image - columns */
+    
+    }
+
+    .welcome-img img{
+        width: 100%;
+        border-radius: 16px;
+        margin-top:36px;
+
+    }
+
+    /* PROJECTS */
+.projects{
+    margin-top: 40px;
+}
+
+.projects a{
+
+    grid-column: span 4;
+    display: block;
+    margin: 20px 0;
+    
+}
+
+
+.projects a:last-child{
+  grid-column: 3/7;
+}
+
+
+.projects a *{
+
+max-width: 65%;
+margin: 10px 20%;
+}
+
+
+.projects h4{
+    text-align: center;
+}
+
+
+#skills{
+    padding: 30px 100px;
+}
+
+#skills li{
+ 
+    background-color: var(--light-pink);
+    /* item stretches across 4 columns */
+    grid-column: span 4;
+ 
+}
+
+footer{
+    margin: 20px;
+    background-size: 10%;
+}
 }
 
 /* large tablet and laptops */
